@@ -1,0 +1,26 @@
+{
+  "name": "weztui-browser",
+  "version": "0.2.0",
+  "description": "A Vim-like interactive Headless Chrome frontend rendered inside WezTerm.",
+  "type": "module",
+  "bin": {
+    "webtui": "./dist/main.js"
+  },
+  "scripts": {
+    "dev": "tsx src/main.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "puppeteer": "^25.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  },
+  "license": "MIT"
+}
